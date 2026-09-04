@@ -15,7 +15,5 @@ pesquisa.addEventListener("input", function () {
             produto.style.display = "none";
         }
 
-    });
-
 });
 
