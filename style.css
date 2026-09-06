@@ -203,7 +203,7 @@ body{
 
 @media (max-width: 768px) {
     body {
-        max-width: 1400px;
+
         zoom: 0.65;
     }
 }
