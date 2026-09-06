@@ -205,56 +205,28 @@ body{
 
     .banner {
         width: 100%;
-        height: auto;
-        min-height: 350px;
-        padding: 25px 15px;
-        margin: 10px 0;
-        box-sizing: border-box;
-    }
-
-    .banner-conteudo {
-        width: 100%;
+        padding: 25px;
         box-sizing: border-box;
     }
 
     .botoes {
         width: 100%;
-        display: flex;
+        gap: 10px;
         justify-content: center;
-        gap: 8px;
-        margin-top: 15px;
-        flex-wrap: wrap;
-    }
-
-    .botoes > div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 8px;
         flex-wrap: wrap;
     }
 
     .botoes button {
-        padding: 8px 12px;
         font-size: 12px;
-        margin: 0;
+        padding: 8px 14px;
     }
 
     .barra-pesquisa {
         width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
     .barra-pesquisa input {
         width: 70%;
-        max-width: 250px;
-        box-sizing: border-box;
-    }
-
-    .barra-pesquisa button {
-        width: 45px;
-        margin-left: 5px;
     }
 }
 }
