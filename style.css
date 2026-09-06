@@ -5,7 +5,7 @@
     object-fit: cover;
     border-radius: 20px;
     margin-left: 170%;
-    transform: translateY(-250px);
+  
     
 }
 
@@ -16,20 +16,7 @@
     margin-top: 60px;
 }
 
-.camisa1 {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-    margin-left: 200px;
-    transform: translateY(300px);
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.15);
-       
 
-    transition:all 0.3s ease;
-
-}
 
 .d-blockw-100 {
 
@@ -40,9 +27,6 @@
 
 }
 
-.camisa1:hover {
-    transform: translateY(300px) scale(1.03);
-}
 
 .barra-pesquisa {
     display: flex;
@@ -126,7 +110,7 @@
 }
 
 body{
-     max-width: 1400px;
+     max-width: auto;
 
      margin: 0 auto;
 
@@ -220,119 +204,33 @@ body{
 
 @media (max-width: 768px) {
 
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    /* Banner */
-    .banner {
-        width: 100%;
-        height: auto;
-        min-height: 400px;
-        margin: 0;
-        padding: 30px 20px;
-        border-radius: 0 0 30px 30px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Conteúdo */
-    .conteudo {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    /* Imagem principal */
-    .agreste {
-        width: 180px;
-        height: 180px;
-        margin-left: auto;
-        margin-right: auto;
-        transform: none;
-    }
-
-    /* Camisa */
-    .camisa1 {
-        width: 100%;
-        max-width: 300px;
-        height: 350px;
-        margin: 0 auto;
-        transform: none;
-    }
-
-    .camisa1:hover {
-        transform: scale(1.03);
-    }
-
-    /* Barra de pesquisa */
-    .barra-pesquisa {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 20px;
-    }
-
-    .barra-pesquisa input {
-        width: calc(100% - 60px);
-        max-width: 350px;
-        height: 45px;
-    }
-
-    .barra-pesquisa button {
-        width: 50px;
-        height: 45px;
-        margin-left: 0;
-    }
-
-    /* Botões de categorias */
-    .botoes {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        margin-top: 20px;
         padding: 10px;
     }
 
-    .botoes button {
-        padding: 10px 18px;
-        font-size: 14px;
-    }
-
-    /* Texto */
-    .texto {
+    .produto img {
         width: 100%;
-        margin: 20px 0;
-        padding: 0 20px;
-        gap: 10px;
+        aspect-ratio: 3 / 4;
+        border-radius: 8px;
     }
 
-    /* Imagens dos produtos */
-    .img_p {
+    .produto h2 {
+        font-size: 16px;
+    }
+
+    .produto p {
+        font-size: 13px;
+    }
+
+    .produto strong {
+        font-size: 16px;
+    }
+
+    .produto button {
         width: 100%;
-        max-width: 300px;
-        height: 350px;
-        display: block;
-        margin: 0 auto;
+        padding: 8px;
     }
-
-    /* Imagem Bootstrap */
-    .d-blockw-100 {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-
 }
 }
