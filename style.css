@@ -160,6 +160,12 @@ body{
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
+.texto{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 ::scroll-marker-group {
     display: none;
 }   
@@ -193,6 +199,140 @@ body{
     border-radius: 20px;
     margin: 50px;
 
+ /* img do produto */
 
+ .img_p{
+
+    display: block;
+     width: 250px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    transition: all 0.3s ease;
+
+     cursor: pointer;
+ }
+
+ .img_p:hover {
+    transform: scale(1.05);
 }
 
+
+@media (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Banner */
+    .banner {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        margin: 0;
+        padding: 30px 20px;
+        border-radius: 0 0 30px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Conteúdo */
+    .conteudo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Imagem principal */
+    .agreste {
+        width: 180px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: none;
+    }
+
+    /* Camisa */
+    .camisa1 {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    .camisa1:hover {
+        transform: scale(1.03);
+    }
+
+    /* Barra de pesquisa */
+    .barra-pesquisa {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .barra-pesquisa input {
+        width: calc(100% - 60px);
+        max-width: 350px;
+        height: 45px;
+    }
+
+    .barra-pesquisa button {
+        width: 50px;
+        height: 45px;
+        margin-left: 0;
+    }
+
+    /* Botões de categorias */
+    .botoes {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .botoes button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    /* Texto */
+    .texto {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 20px;
+        gap: 10px;
+    }
+
+    /* Imagens dos produtos */
+    .img_p {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Imagem Bootstrap */
+    .d-blockw-100 {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}
+}
