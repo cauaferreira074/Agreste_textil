@@ -201,36 +201,10 @@ body{
     transform: scale(1.05);
 }
 
-
 @media (max-width: 768px) {
-
-    .produtos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .produto img {
-        width: 100%;
-        aspect-ratio: 3 / 4;
-        border-radius: 8px;
-    }
-
-    .produto h2 {
-        font-size: 16px;
-    }
-
-    .produto p {
-        font-size: 13px;
-    }
-
-    .produto strong {
-        font-size: 16px;
-    }
-
-    .produto button {
-        width: 100%;
-        padding: 8px;
+    body {
+        max-width: 1400px;
+        zoom: 0.65;
     }
 }
 }
