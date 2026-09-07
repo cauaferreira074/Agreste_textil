@@ -173,10 +173,11 @@ body{
 
 /*sistema mobile*/
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   
     .banner{
-        width: 100% ;
+        max-width: 100%;
+        height: 70%;
         box-sizing: border-box;
         position: relative;
         overflow-x: hidden;
@@ -185,17 +186,17 @@ body{
     }
 
    .botoes {
-    display: flex;
+    display: block;
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
 
-    width: 150%;
+    width: 200%;
     margin: 0 auto;
     gap: 6px;
     padding: 5px 10px;
 
-    box-sizing: border-box;
+   
     scrollbar-width: none;
 }
 
@@ -211,19 +212,19 @@ body{
 }
 
     .img_p {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: auto;
         margin: 0 auto;
     }
 
     .texto{
 
-        font-size: 10px;
+        font-size: 7px;
 
     }
     .texto h2{
 
-        font-size: 10px;
+        font-size: 8px;
 
     
         
@@ -233,17 +234,18 @@ body{
 
 
     .banner-conteudo h1{
-      font-size: 15px;
+      font-size: 10px;
     }
 
     .banner-conteudo p {
 
-        font-size: 13px;
+        font-size: 8px;
     }
 
     .barra-pesquisa{
         position:absolute;
-        right: 20px;
+        width: 100%;
+        right: 30px;
         top: 50%;
         transform: translateY(-50%);
 
@@ -254,9 +256,20 @@ body{
     }
 
     .barra-pesquisa input {
-         width: 150px;
+         width: 70%;
         height: 30px;
         padding: 0px;
+        font-size: 12px;
+       
+       
+
+
+    }
+
+    /* Lupa tam */
+    .barra-pesquisa i {
+        font-size: 15px;
+
 
 
     }
@@ -265,8 +278,8 @@ body{
 
     .barra-pesquisa button {
     
-          height: 10px;
-          width: 10px;
+          height: 30px;
+          width: 30px;
            
 }
 
