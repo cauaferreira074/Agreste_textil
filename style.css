@@ -173,42 +173,42 @@ body{
 
 /*sistema mobile*/
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   
     .banner{
         width: 100% ;
-        height: 200px ;
+        box-sizing: border-box;
         position: relative;
+        overflow-x: hidden;
 
 
     }
 
-    .botoes{
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-        transform: translateY(80%);
+   .botoes {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 
-        scroll-behavior: none;
-    }
+    width: 150%;
+    margin: 0 auto;
+    gap: 6px;
+    padding: 5px 10px;
 
-    .botoes ::-webkit-scrollbar{
-        display: none;
-    }
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
 
-    .botoes button {
-        position:relative;
-        flex-shrink: 0;
-        white-space: nowrap;
+.botoes::-webkit-scrollbar {
+    display: none;
+}
 
-        padding: 6px 12px;
-        font-size: 12px;
-        border-radius: 15px;
-
-    }
+.botoes button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 12px;
+}
 
     .img_p {
         width: 100px;
